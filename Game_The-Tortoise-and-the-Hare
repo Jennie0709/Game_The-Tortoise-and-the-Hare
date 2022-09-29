@@ -219,6 +219,7 @@ def gameWinner(score_T3):
             print("Congrate! You win!")
 
         else:
+            printGraphic("RabbitWin")
             print("Oh, I'm sorry. You lose the race. Try again.")
         
 # Rabbit Game over: If user win 4 score or above in total, they win.
@@ -229,6 +230,7 @@ def gameOver_R(score_R3):
             print ("Congrate! You win!")
 
         else:
+            printGraphic("TurtleWin")
             print ("Oh, I'm sorry. You lose the race. Try again.")
 
 
@@ -252,7 +254,7 @@ def jumpRock(minNum, maxNum, difficulty):
 def Game3_T():
     print ("You are almost reach the finish line, but you are too exhausted to move even a step.")
     print ("Choose a food to eat. Which do you want to eat?")
-    print ("Vegetable, Sweet Potato or Corn")
+    print ("🥦Vegetable, 🥔Sweet Potato or 🌽Corn")
 
     pcmd = input ("Which food would you eat?")
 
@@ -296,7 +298,7 @@ def Game3_T():
         
     else:
         print ("You don't have this. Pick another food.")
-        Game3_T()
+        Game3_T()  # Try again
 
     return
 
@@ -306,7 +308,7 @@ def Game3_T():
 def Game3_R():
     print ("You are almost reach the finish line, but you are too exhausted to move even a step.")
     print ("Choose a food to eat. Which do you want to eat?")
-    print ("Vegetable, Sweet Potato or Corn")
+    print ("🥦Vegetable, 🥔Sweet Potato or 🌽Corn")
 
     pcmd = input ("Which food would you eat?: ")
 
@@ -350,7 +352,7 @@ def Game3_R():
         
     else:
         print ("You don't have this. Pick another food.")
-        Game3_R()
+        Game3_R() # Try again
 
     return
 
@@ -409,7 +411,7 @@ def play_T():
         print(score_T2)
         input ("press enter >")
         
-        Game3_T()
+        Game3_T() # Start the Game3_T
 
     elif (result == 2):
         score_T2 = 0
@@ -417,7 +419,7 @@ def play_T():
         print(score_T2)
         input ("press enter >")
 
-        Game3_T()
+        Game3_T() # Start the Game3_T
 
     else:
         score_T2 = 0
@@ -491,7 +493,7 @@ def play_R():
         print(score_T2)
         input ("press enter >")
 
-        Game3_R()
+        Game3_R() 
 
     else:
         score_T2 = 0
@@ -528,7 +530,7 @@ def Game1_T():
         Game2_T()
 
     else:
-        Game1_T()
+        Game1_T() # Try again
 
 
 
@@ -558,13 +560,13 @@ def Game1_R():
         Game2_R()
 
     else:
-        Game1_R()
+        Game1_R() # Try again
 
 
 # Choose a character
 def character():
     print ("Before you start the game, you can choose a character.")
-    print("Do you want to be a Turtle or a Rabbit?")
+    print("Do you want to be a Turtle🐢 or a Rabbit🐇?")
     
     pcmd = input ("Please choose Turtle or Rabbit: ")
 
